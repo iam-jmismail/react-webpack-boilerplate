@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.jsx',
 
     output: {
         filename: 'bundle.[hash].js',
