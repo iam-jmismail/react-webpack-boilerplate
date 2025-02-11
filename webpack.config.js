@@ -8,9 +8,12 @@ module.exports = {
   output: {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
 
   mode: "development",
+
+  devtool: "source-map",
 
   devServer: {
     port: 3000,
