@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack serve",
+    "build": "webpack"
   },
   "keywords": [
     "React Boilerplate"
   ],
   "author": "Mohamed Ismail",
   "license": "MIT",
-  "description": "A light weight boilerplate code for learning ReactJS library"
+  "description": "A light weight boilerplate code for learning ReactJS library",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
 }
