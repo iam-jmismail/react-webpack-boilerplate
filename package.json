@@ -1,0 +1,14 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React Boilerplate"
+  ],
+  "author": "Mohamed Ismail",
+  "license": "MIT",
+  "description": "A light weight boilerplate code for learning ReactJS library"
+}
