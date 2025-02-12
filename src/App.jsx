@@ -1,8 +1,12 @@
 import React from 'react'
+import ErrorBoundary from './components/ErrorBoundary'
+import HomePage from './pages/HomePage'
 
 function App() {
     return (
-        <div>Hello React</div>
+        <ErrorBoundary>
+            <HomePage/>
+        </ErrorBoundary>
     )
 }
 

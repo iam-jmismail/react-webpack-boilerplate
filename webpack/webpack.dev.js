@@ -9,6 +9,12 @@ module.exports = merge(common, {
   devServer: {
     port: 3000,
     hot: true,
-    compress: true,
+    liveReload: true,
+    client: {
+      overlay: {
+        warnings: true,
+        errors: true,
+      },
+    },
   },
 });
