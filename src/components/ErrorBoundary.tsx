@@ -1,17 +1,24 @@
 import React from 'react';
 
-class ErrorBoundary extends React.Component {
+type IProps = {
+  children : React.ReactNode
+}
+
+type IState = {
+  hasError : boolean
+}
+
+class ErrorBoundary extends React.Component<IProps,IState> {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
   }
 
   static getDerivedStateFromError(error) {
-    // Update state to trigger fallback UI
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo :any) {
     console.error("Error caught in ErrorBoundary:", error, errorInfo);
   }
 
